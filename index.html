@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search Application </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main-container">
+        <div class="wiki-search-header text-center">
+            <h1 class="text-center" style="font-family:'Times New Roman', Times, serif;"> Wikipedia Search Applicaion </h1>
+            <img class="wiki-logo text-center" src="wikipedia-logo.png" />
+            <br />
+            <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" />
+            <p id="errMsg" class="err-msg"></p>
+        </div>
+        <div class="d-none" id="spinner">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                </div>
+            </div>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
